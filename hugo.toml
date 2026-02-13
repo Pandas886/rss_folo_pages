@@ -1,0 +1,40 @@
+baseURL = "https://pandas886.github.io/rss_folo_pages/"
+languageCode = "zh-CN"
+title = "Folo RSS 每日分析"
+theme = "PaperMod"
+
+[params]
+env = "production"
+title = "Folo RSS 每日分析"
+description = "AI新闻、科技巨头动态与前瞻性洞察"
+author = "Folo Analyzer"
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowFullTextInRSS = true
+ShowToc = true
+
+[params.homeInfoParams]
+Title = "Folo RSS 每日分析"
+Content = "这里是每日的 AI 新闻、特朗普/马斯克动态及前瞻性洞察报告。"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/Pandas886/rss_folo_pages"
+
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 20
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
